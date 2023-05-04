@@ -1,0 +1,128 @@
+$primary: #8093f1;
+$secondary: #f7aef8;
+$contrast: #72ddf7;
+$alert: #ff4d4d;
+$light: #f4f4ed;
+$dark: #0d001a;
+$daytime: linear-gradient(to bottom, #2dbce0, #98f7f2);
+$nighttime: linear-gradient(to bottom, #16085f, #443e9e);
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $nighttime;
+  color: $light;
+  height: 100%;
+  overflow: hidden;
+  font-family: Lato-Light;
+  z-index: 1;
+  flex-direction: column;
+
+  &.daytime {
+    background: $daytime;
+    color: $dark;
+  }
+
+  .skyline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 0;
+    background-image: url("./../../assets/images/background.png");
+    background-size: 100%;
+    background-position-y: bottom;
+    opacity: 0.8;
+    background-repeat: repeat-x;
+    animation: skyline 20s linear infinite;
+  }
+  .title {
+    z-index: 1;
+    font-family: Lato-Regular;
+    font-weight: 300;
+  }
+  .weather-info {
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    font-family: Lato-Light;
+    justify-content: space-evenly;
+
+    .weather-location,
+    .weather-temperature {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      h3 {
+        padding-right: 8px;
+        font-weight: 400;
+        font-family: Lato-Light;
+      }
+    }
+  }
+
+  .input-container {
+    padding-bottom: 8px;
+    padding-top: 8px;
+    z-index: 1;
+    .text-input {
+      display: flex;
+      justify-content: center;
+      height: 42px;
+      width: 180px;
+      border-radius: 16px;
+      font-family: Lato-Regular;
+      border-color: $contrast;
+      background-color: #f4f4ed;
+      border-width: 4px;
+    }
+
+    .input-label {
+      padding: 10px;
+    }
+
+    .error {
+      color: $alert;
+    }
+  }
+
+  .search-btn {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    font-family: Lato-Light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: $contrast;
+    font-weight: 100;
+    font-family: Arial, Helvetica;
+    font-size: large;
+    color: $dark;
+    border-width: 4px;
+
+    &.disabled {
+      opacity: 0.4;
+      background-color: #ff4d4d;
+    }
+  }
+}
+
+@keyframes skyline {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -100%;
+  }
+}
