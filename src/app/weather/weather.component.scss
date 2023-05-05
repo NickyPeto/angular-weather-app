@@ -35,12 +35,14 @@ $nighttime: linear-gradient(to bottom, #16085f, #443e9e);
     margin: 0;
     position: absolute;
     z-index: 0;
-    background-image: url("./../../assets/images/background.png");
-    background-size: 100%;
+
+    background-image: url("../../assets/images/foreground.png"),
+      url("../../assets/images/background.png");
+    background-size: 80vh, 90vh;
     background-position-y: bottom;
     opacity: 0.8;
     background-repeat: repeat-x;
-    animation: skyline 20s linear infinite;
+    animation: skyline 50s linear infinite;
   }
   .title {
     z-index: 1;
