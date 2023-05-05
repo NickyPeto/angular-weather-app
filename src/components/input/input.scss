@@ -1,0 +1,30 @@
+$primary: #8093f1;
+$secondary: #f7aef8;
+$contrast: #72ddf7;
+$alert: #ff4d4d;
+$light: #f4f4ed;
+$dark: #0d001a;
+$daytime: linear-gradient(to bottom, #1e87a1, #81f3ed);
+$nighttime: linear-gradient(to bottom, #16085f, #443e9e);
+
+.input-container {
+  z-index: 1;
+  .text-input {
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    width: 140px;
+    border-radius: 8px;
+    font-family: Lato-Regular;
+    border-color: $contrast;
+    background-color: #f4f4ed;
+  }
+
+  .input-label {
+    padding: 10px;
+  }
+
+  .error {
+    color: $alert;
+  }
+}

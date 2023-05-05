@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { WeatherComponent } from './weather.component';
 import { CommonModule } from '@angular/common';
+
+import { ComponentsModule } from 'src/components/components.module';
 @NgModule({
   declarations: [WeatherComponent],
   imports: [
@@ -12,6 +14,7 @@ import { CommonModule } from '@angular/common';
     ReactiveFormsModule,
     MatButtonModule,
     HttpClientModule,
+    ComponentsModule,
   ],
   exports: [WeatherComponent],
 })

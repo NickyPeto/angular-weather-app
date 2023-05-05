@@ -4,7 +4,7 @@ $contrast: #72ddf7;
 $alert: #ff4d4d;
 $light: #f4f4ed;
 $dark: #0d001a;
-$daytime: linear-gradient(to bottom, #2dbce0, #98f7f2);
+$daytime: linear-gradient(to bottom, #1e87a1, #81f3ed);
 $nighttime: linear-gradient(to bottom, #16085f, #443e9e);
 
 .container {
@@ -67,55 +67,6 @@ $nighttime: linear-gradient(to bottom, #16085f, #443e9e);
         font-weight: 400;
         font-family: Lato-Light;
       }
-    }
-  }
-
-  .input-container {
-    padding-bottom: 8px;
-    padding-top: 8px;
-    z-index: 1;
-    .text-input {
-      display: flex;
-      justify-content: center;
-      height: 42px;
-      width: 180px;
-      border-radius: 16px;
-      font-family: Lato-Regular;
-      border-color: $contrast;
-      background-color: #f4f4ed;
-      border-width: 4px;
-    }
-
-    .input-label {
-      padding: 10px;
-    }
-
-    .error {
-      color: $alert;
-    }
-  }
-
-  .search-btn {
-    padding-bottom: 4px;
-    padding-top: 4px;
-    font-family: Lato-Light;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 180px;
-    border-radius: 10px;
-    border-color: transparent;
-    background-color: $contrast;
-    font-weight: 100;
-    font-family: Arial, Helvetica;
-    font-size: large;
-    color: $dark;
-    border-width: 4px;
-
-    &.disabled {
-      opacity: 0.4;
-      background-color: #ff4d4d;
     }
   }
 }

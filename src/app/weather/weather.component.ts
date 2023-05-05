@@ -10,7 +10,7 @@ import { Observable, Subject, map, takeUntil } from 'rxjs';
 })
 export class WeatherComponent implements OnInit, OnDestroy {
   public $data!: Observable<any>;
-  public isDaytime: boolean = false;
+  public isDaytime: boolean = true;
   private hours: number = 0;
   private readonly cancellation = new Subject<void>();
 
@@ -49,7 +49,7 @@ export class WeatherComponent implements OnInit, OnDestroy {
       )
       .subscribe((value) => {
         this.hours = new Date(value).getHours();
-        this.isDaytime = this.hours > 12 ? true : false;
+        this.isDaytime = this.hours > 6 ? true : false;
       });
   }
 }
