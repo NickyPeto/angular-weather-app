@@ -1,0 +1,30 @@
+<!-- <div class="input-container">
+  <label class="input-label" for="city-name-input">City</label>
+  <input
+    class="text-input"
+    required="true"
+    [formControl]="cityName"
+    type="text"
+    aria-label="city-name-input"
+    [value]="cityName"
+  />
+  <ng-container
+    *ngIf="cityName.invalid && (cityName.dirty || cityName.touched)"
+  >
+    <h3 class="error" aria-label="input-error">Please enter a city name</h3>
+  </ng-container>
+</div> -->
+<div class="input-container">
+  <input
+    class="text-input"
+    required="true"
+    type="text"
+    aria-label="city-name-input"
+    [value]="cityName"
+  />
+  <ng-container
+    *ngIf="cityName.invalid && (cityName.dirty || cityName.touched)"
+  >
+    <h3 class="error" aria-label="input-error">Please enter a city name</h3>
+  </ng-container>
+</div>
