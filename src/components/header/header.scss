@@ -12,8 +12,33 @@ $nighttime: linear-gradient(to bottom, #16085f, #443e9e);
   flex-direction: row;
   position: absolute;
   width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background: $light;
+  min-height: 80px;
+
+  .title-container {
+    padding-left: 8px;
+    .title {
+      font-family: "Raleway-regular";
+      color: #1e87a1;
+      font-size: 26px;
+
+      @media screen and (max-width: 393px) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .user-action {
+    display: flex;
+    justify-content: center;
+    padding-right: 8px;
+  }
+
+  @media screen and (max-width: 393px) {
+    max-height: 80px;
+  }
 }

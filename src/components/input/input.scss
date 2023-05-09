@@ -9,6 +9,8 @@ $nighttime: linear-gradient(to bottom, #16085f, #443e9e);
 
 .input-container {
   z-index: 1;
+  padding-left: 4px;
+  padding-right: 4px;
   .text-input {
     display: flex;
     justify-content: center;

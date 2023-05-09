@@ -7,26 +7,31 @@ $dark: #0d001a;
 $daytime: linear-gradient(to bottom, #1e87a1, #81f3ed);
 $nighttime: linear-gradient(to bottom, #16085f, #443e9e);
 
-.search-btn {
-  padding-bottom: 4px;
-  padding-top: 4px;
-  font-family: Lato-Light;
+.button-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 38px;
-  width: 100px;
-  border-radius: 8px;
-  border-color: transparent;
-  background-color: $contrast;
-  font-weight: 100;
-  font-family: Arial, Helvetica;
-  font-size: large;
-  color: $dark;
-  border-width: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  .search-btn {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    font-family: Lato-Light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    width: 100px;
+    border-radius: 8px;
+    border-color: transparent;
+    background-color: $contrast;
+    font-weight: 100;
+    font-family: Arial, Helvetica;
+    font-size: large;
+    color: $dark;
+    border-width: 4px;
 
-  &.disabled {
-    opacity: 0.4;
-    background-color: #ff4d4d;
+    &.disabled {
+      opacity: 0.4;
+      background-color: #ff4d4d;
+    }
   }
 }

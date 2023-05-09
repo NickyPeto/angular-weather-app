@@ -1,9 +1,6 @@
 <app-header></app-header>
 <div class="container" [class.daytime]="isDaytime">
   <div class="skyline"></div>
-  <h2 class="title" aria-label="App title">
-    What is the weather today in? ...
-  </h2>
   <ng-container *ngFor="let item of $data | async">
     <ng-container *ngIf="item.location">
       <div class="weather-info">
