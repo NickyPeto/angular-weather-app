@@ -49,7 +49,7 @@ export class WeatherComponent implements OnInit, OnDestroy {
       )
       .subscribe((value) => {
         this.hours = new Date(value).getHours();
-        this.isDaytime = this.hours > 6 ? true : false;
+        this.isDaytime = this.hours < 17 ? true : false;
       });
   }
 }
